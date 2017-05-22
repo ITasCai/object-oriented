@@ -10,6 +10,16 @@ namespace _5._19_lx
     {
         static void Main(string[] args)
         {
+            Car car = new Car();
+            car.Color = "red";
+            // Console.WriteLine(car.Color);
+            car.OilMeter = 10;
+            car.GetYou();
+            car.GetYou(60);
+
+
+            Console.ReadKey();
+               
         }
     }
 }
