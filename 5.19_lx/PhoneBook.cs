@@ -10,6 +10,14 @@ namespace _5._19_lx
     {
         private string name;
         private int age;
-        
+        private string sex;
+
+        public PhoneBook() {
+
+        }
+
+        //析构函数
+        ~PhoneBook() {
+        }
     }
 }

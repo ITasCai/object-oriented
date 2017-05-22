@@ -24,6 +24,29 @@ namespace _5._19_lx
         //最高时速
         private int speed;
 
+        private string[] style;
+
+        public Car() {
+            style = new string[] { "跑车","轿车","SUV"};
+
+        }
+
+        /// <summary>
+        /// 定义一个索引器
+        /// 可以给汽车类型赋值
+        /// 也可以取汽车类型值
+        /// </summary>
+        /// <param name="index">索引类型名称</param>
+        /// <returns></returns>
+        public string this[int index] {
+            get {
+                return style[index];
+            }
+            set {
+                style[index] = value;
+            }
+        }
+
         public string Color
         {
             get
